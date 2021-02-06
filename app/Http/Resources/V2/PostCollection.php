@@ -12,14 +12,14 @@ class PostCollection extends ResourceCollection
     {
         return [
             'data' => $this->collection,
-            'meta' => [
-                'organization' => 'Platzi',
-                'authors' => [
-                    'Lercc',
-                    'Italo'    
-                ]
-            ],
-            'type' => 'articles'
+            // 'meta' => [
+            //     'organization' => 'Platzi',
+            //     'authors' => [
+            //         'Lercc',
+            //         'Italo'    
+            //     ]
+            // ],
+            // 'type' => 'articles'
         ];
     }
 }
