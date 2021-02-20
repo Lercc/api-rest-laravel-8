@@ -14,4 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('descarga',[PostController::class, 'descarga']);
 Route::resource('/', PostController::class)->only('index');

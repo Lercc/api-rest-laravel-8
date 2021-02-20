@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Route;
 // });
 
 // V1
+Route::get('V1/descarga',[PostV1::class, 'descarga']);
 Route::apiResource('V1/posts', PostV1::class)
     ->only(['index','show', 'destroy']);
 
@@ -19,3 +20,4 @@ Route::apiResource('V2/posts', PostV2::class)
     ->middleware('auth:sanctum');
 
 Route::post('V2/login', [LoginController::class, 'login']);
+

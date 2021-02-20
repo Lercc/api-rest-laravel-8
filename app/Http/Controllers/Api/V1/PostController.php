@@ -7,6 +7,10 @@ use App\Http\Resources\V1\PostResource;
 use App\Models\Post;
 use Illuminate\Http\Request;
 
+
+use App\Exports\PostsExport;
+use Maatwebsite\Excel\Facades\Excel;
+
 class PostController extends Controller
 {
     public function index()
@@ -25,5 +29,10 @@ class PostController extends Controller
     {
         $post->delete();
         return response(null, 204);
+    }
+
+    public function descarga()
+    {
+        return Excel::download(new PostsExport, 'publicaciones.xlsx');
     }
 }
