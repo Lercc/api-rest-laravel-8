@@ -20,17 +20,14 @@
 
 
 ## INSTALACIÓN
-    
     Instalar mediante composer:
-
-<pre>composer require laravel/sanctum<pre>
+    composer require laravel/sanctum
+    
 
     opcional : publicar archivos de configuración y migración de Sanctum
-
-<pre>php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"<pre>
+    php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
+    
 
     Ejecutar las migraciones de su base de datos. Sanctum creará una tabla de base de datos en la que almacenar tokens API:
-
-<pre>php artisan migrate<pre>
-
-<pre>Migrating: 2019_12_14_000001_create_personal_access_tokens_table<pre>
+    php artisan migrate
+    Migrating: 2019_12_14_000001_create_personal_access_tokens_table
